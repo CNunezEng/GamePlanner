@@ -1,0 +1,49 @@
+syntax = "proto3"
+Package Warhamer40k;
+
+message Warhammer40kUnit{
+	int move = 0;
+	bool fly =1;
+	int min_move = 2;
+	int leadership = 3;
+	int weapon_skill = 4;
+	int balistic_skill = 5;
+	int toughness = 6;
+	int wounds = 7;
+	int save = 8;
+	repeated Power power = 9;
+	repeated Weapon weapon = 10;
+}
+
+message Warhamer40kTransport{
+	int front_armor = 0;
+	int side_armor = 1;
+	int rear_armor = 2;
+	int balistic_skill = 3;
+	string type = 4;
+	int transport = 5
+	int access_pts = 6;
+	int fire_pts = 7;
+	repeated Weapon weapon = 8;
+}
+
+message Weapon{
+	int range = 0;
+	int attacks = 1;
+	int strengh = 2;
+	int armor_peircing = 3;
+	string text = 4;
+	Type type = 5;
+	int damage = 6;
+}
+
+message Type{
+	string name = 0;
+	string text = 1;
+}
+
+message Power{
+	string name = 0;
+	string text = 1;
+	Weapon stats = 2;
+}

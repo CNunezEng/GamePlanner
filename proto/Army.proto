@@ -1,0 +1,21 @@
+syntax = "proto3"
+
+//add army files here
+import "warhammer40kUnit.proto";
+
+Package army;
+
+
+message ArmyDescription{
+	int cost = 0;
+	repeated Unit units = 1;
+}
+
+//add units and whatnots here
+message Unit{
+	int cost = 0;
+	int num_figures = 1;
+	string description = 2;
+	Warhammer40kUnit warhammer40k_unit = 2;
+	Warhamer40kTransport warhammer40k_transport = 3;
+}
