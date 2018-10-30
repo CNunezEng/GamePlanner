@@ -1,0 +1,20 @@
+Class Diagram
+
+main
+
+GamePlanner --GamePlannerTest
+	printMenu
+	printArmy
+	printCost
+	printOptionsShort
+	printOptionsLong
+	printToFile
+
+Army--ArmyTest
+	setUnit
+	getUnit
+	printUnit
+	newUnit
+
+Options -- OptionsTest
+	loadOptions
