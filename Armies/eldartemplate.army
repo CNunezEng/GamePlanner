@@ -1,0 +1,42 @@
+Unit
+{
+	name:
+	cost:
+	num_figures:
+	description:
+	warhammer40k_unit
+	{
+		move:
+		fly:
+		min_move:
+		leadership:
+		weapon_skill:
+		balistic_skill:
+		toughness:
+		wounds:
+		save:
+		power
+		{
+			name:
+			text:
+			stats
+			{
+				
+			}
+		}
+		weapon
+		{
+			range:
+			attacks:
+			strengh:
+			armor_peircing:
+			text:
+			type
+			{
+				name:
+				text:
+			}
+			damage:
+		}
+	}
+}

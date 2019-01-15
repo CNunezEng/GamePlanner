@@ -2,7 +2,7 @@ Class Diagram
 
 main
 
-GamePlanner --GamePlannerTest
+GamePlanner --GamePlannerTest(gtest?)
 	printMenu
 	printArmy
 	printCost
@@ -18,3 +18,12 @@ Army--ArmyTest
 
 Options -- OptionsTest
 	loadOptions
+
+later
+tcpserver --tcpservertest
+	connect
+	send
+	recieve
+	disconnect
+	
+QTgui
