@@ -2,19 +2,17 @@ syntax = "proto3";
 
 import "warhammer40kUnit.proto";
 
-Package army;
-
-message ArmyDescription{
-	int cost = 0;
-	repeated Unit units = 1;
+message ArmyDescription {
+	uint32 cost = 1;
+	repeated Unit units = 2;
 }
 
 //add units and whatnots here
-message Unit{
-	string name = 0;
-	int cost = 1;
-	int num_figures = 2;
-	string description = 3;
-	Warhammer40kUnit warhammer40k_unit = 4;
-	Warhamer40kTransport warhammer40k_transport = 5;
+message Unit {
+	string name = 1;
+	uint32 cost = 2;
+	uint32 num_figures = 3;
+	string description = 4;
+	Warhammer40kUnit warhammer40k_unit = 5;
+	Warhamer40kTransport warhammer40k_transport = 6;
 }
