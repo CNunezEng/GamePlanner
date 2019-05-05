@@ -1,5 +1,5 @@
 # GamePlanner
-A project to assist with theplanning of table top games
+A project to assist with the planning of table top games
 
 # Requirements
 
